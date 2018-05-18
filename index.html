@@ -1,21 +1,442 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="subject" content="This is just resume">
-    <meta name="description" content="My own website">
-    <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
-    <meta name="google" content="nositelinkssearchbox">
-    <meta name="google" content="notranslate">
-    <link rel="me" href="https://www.facebook.com/jenniferlopez" type="text/html">
-    <link rel="me" href="mailto:oksana@gmail.com">
-    <link rel="me" href="sms:+15035550125">
-    <title>Oksana Drul — Résumé</title>
-  </head>
-  <body>
-    <h1>Hello world!!!</h1>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="subject" content="This is just resume">
+  <meta name="description" content="My own website">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+  <link rel="me" href="https://www.facebook.com/jenniferlopez" type="text/html">
+  <link rel="me" href="mailto:oksana@gmail.com">
+  <link rel="me" href="sms:+15035550125">
+  <!-- title -->
+  <title>Oksana Drul — Résumé</title>
+  <!-- favicon -->
+  <link href="favicon.png" rel=icon>
+  <!-- web-fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <!-- font-awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+    crossorigin="anonymous" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper library for 3d carasoule -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css" rel="stylesheet">
+  <!-- Aos library for animation -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Style CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+  <div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+      <div id="status">
+        <div class="status-mes"></div>
+      </div>
+    </div>
+    <a href="#" id="back-to-top" class="show">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Navigation -->
+    <div class="container">
+      <nav class="navbar fixed-top navbar-light navbar-expand-lg navbar-template" id="myScrollspy">
+
+        <a class="navbar-brand" href="#home">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="d-flex flex-row order-2 order-lg-3 align-items-center">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="https://www.facebook.com/oksana.drul.3?ref=bookmarks" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="https://www.linkedin.com/in/oksana-drul-300819130/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Home Section -->
+    <div class="overlay"></div>
+    <section id="home">
+      <div class="main-info container-fluid">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center text-center" data-aos="fade-right" data-aos-delay="600">
+          <h1>
+            <strong>Hire Expert Front End &amp;</strong>
+            <br> Web Application Developer
+          </h1>
+          <p>
+            I am a Ukraine&nbsp;based developer specialized in branding and web design.
+            <br> Take a look at my work and if you like it I would love to hear from you!
+          </p>
+          <!-- <div class="main-info-buttons">-->
+          <div class="main-info-buttons">
+            <a class="btn btn-outline-light" href="#about-me" data-aos="fade-right">Learn more</a>
+            <a class="btn btn-outline-light" href="#contact" data-aos="fade-left">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AboutMe Section -->
+    <section id="about-me">
+      <div class="container-fluid d-flex flex-column justify-content-center align-items-center text-center">
+        <h3 data-aos="fade-right">This is me. Designer by day
+          <span class="special_amp">&amp;</span> developer by night. I never sleep… almost.</h3>
+        <img data-aos="flip-left" src="img/avatar.jpg" alt="it's me">
+        <div class="hr"></div>
+        <p data-aos="flip-down">I am positive, intelligent, active, calm, friendly, sociable and studious. I am able to analyze and think logically.</p>
+        <p data-aos="flip-down">I have no bad habits. Sociable and very hardworking person, careful. I easily absorb new information. Active and
+          have a good sense of humor. </p>
+        <p data-aos="flip-down">Willing to learn and work hard. I enjoy learning new programs and processes. I am a team player. </p>
+        <div class="hr"></div>
+      </div>
+      <div class="about-img col-md-12 d-flex flex-column justify-content-center align-items-center">
+        <img src="img/about-img.png" alt="about me" class="img-fluid">
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="row m-0 h-100 d-flex">
+        <div class="d-none d-lg-block col-lg-5 left-side">
+        </div>
+        <div class="col-sm-12 col-lg-7 mt-auto mb-auto">
+          <h3 class="text-center" data-aos="fade-right">Here is a list of things I can do for you</h3>
+          <div class="hr"></div>
+          <p class="text-center" data-aos="fade-left">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus.</p>
+          <p class="text-center" data-aos="fade-left">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div class="row services-box">
+            <div class="col-xs-12 col-sm-6 col-md-6 d-flex">
+              <i class="fas fa-paint-brush" data-aos="flip-left"></i>
+              <div class="text-wrapper" data-aos="flip-down">
+                <h2>WEB DESIGN</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 d-flex">
+              <i class="fas fa-wrench" data-aos="flip-left"></i>
+              <div class="text-wrapper" data-aos="flip-down">
+                <h2>WEB DEVELOPMENT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 d-flex">
+              <i class="fas fa-search" data-aos="flip-left"></i>
+              <div class="text-wrapper" data-aos="flip-down">
+                <h2>SEO CONSULTING</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 d-flex">
+              <i class="fas fa-life-ring" data-aos="flip-left"></i>
+              <div class="text-wrapper" data-aos="flip-down">
+                <h2>24/7 SUPPORT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 d-flex">
+              <i class="fab fa-facebook-f" data-aos="flip-left"></i>
+              <div class="text-wrapper" data-aos="flip-down">
+                <h2>SOCIAL MEDIA</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 d-flex">
+              <i class="fas fa-shopping-basket" data-aos="flip-left"></i>
+              <div class="text-wrapper" data-aos="flip-down">
+                <h2>E-COMMERCE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Responsive Section -->
+    <section id="responsive">
+      <div class="row m-0 h-100 d-flex">
+        <div class="d-none d-lg-block col-lg-5 left-side">
+        </div>
+        <div class="col-sm-12 col-lg-7 mt-auto mb-auto">
+          <h3 class="text-center" data-aos="fade-right">Super easy syncing with all of your other devices via cloud services</h3>
+          <div class="hr"></div>
+          <p class="text-center" data-aos="fade-left">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus.</p>
+          <p class="text-center" data-aos="fade-left">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+            <img src="img/responsive-slide.png" alt="responsive" class="img-fluid" data-aos="flip-left">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="row m-0 h-100 d-flex">
+        <div class="d-none d-lg-block col-lg-5 left-side">
+        </div>
+        <div class="col-sm-12 col-lg-7 mt-auto mb-auto">
+          <h3 data-aos="fade-right">My web-development experience</h3>
+          <div class="hr"></div>
+          <p data-aos="fade-left">Hi, instead of the usual: “My name is blah blah. I’m proficient with blah blah blah…” and other boring sh.. about
+            why I’m so great, I’ll just keep it simple:</p>
+          <div class="progress" data-aos="flip-left" data-aos-delay="300">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">HTML/HTML5/CSS/CSS3 </div>
+          </div>
+          <div class="progress" data-aos="flip-left" data-aos-delay="500">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">LESS/SASS/BEM/GULP</div>
+          </div>
+          <div class="progress" data-aos="flip-left" data-aos-delay="700">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">JavaScript/Typescript/ES6/OOP/jQuery</div>
+          </div>
+          <div class="progress" data-aos="flip-left" data-aos-delay="900">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">Angular 2/4/Vue.js/NodeJS</div>
+          </div>
+          <div class="progress" data-aos="flip-left" data-aos-delay="1100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">MySQL/MongoDB/PostgreSql</div>
+          </div>
+          <div class="progress" data-aos="flip-left" data-aos-delay="1300">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">Git/GitLab/Bitbucket</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- General info Section -->
+    <section id="general-info">
+      <div class="row m-0 h-100 d-flex">
+        <div class="d-none d-lg-block col-lg-5 left-side">
+        </div>
+        <div class="col-sm-12 col-lg-7 mt-auto mb-auto">
+          <h3 data-aos="fade-right">General information</h3>
+          <div class="hr"></div>
+          <p data-aos="fade-left">Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+            dis parturient montes, nascetur ridiculus mus.</p>
+          <p data-aos="fade-left">Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div class="row">
+
+            <div class="col-xs-6 col-sm-3 w-50 d-flex justify-content-center align-items-center">
+              <div class="counter d-flex justify-content-center align-items-center">
+                <i class="fas fa-chart-pie fa-3x d-flex justify-content-center align-items-center"></i>
+                <div class="counter-info">
+                  <h2 class="counter-value" data-aos="zoom-in" data-aos-delay="200">12</h2>
+                  <h6>Happy clients</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 w-50 d-flex justify-content-center align-items-center">
+              <div class="counter d-flex justify-content-center align-items-center">
+                <i class="fas fa-seedling fa-3x d-flex justify-content-center align-items-center"></i>
+                <div class="counter-info">
+                  <h2 class="counter-value" data-aos="zoom-in" data-aos-delay="400">7</h2>
+                  <h6>Projects done</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 w-50 d-flex justify-content-center align-items-center">
+              <div class="counter d-flex justify-content-center align-items-center">
+                <i class="fas fa-random fa-3x d-flex justify-content-center align-items-center"></i>
+                <div class="counter-info">
+                  <h2 class="counter-value" data-aos="zoom-in" data-aos-delay="600">2</h2>
+                  <h6>Active projects</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-3 w-50 d-flex justify-content-center align-items-center">
+              <div class="counter d-flex justify-content-center align-items-center">
+                <i class="fas fa-flask fa-3x d-flex justify-content-center align-items-center"></i>
+                <div class="counter-info">
+                  <h2 class="counter-value" data-aos="zoom-in" data-aos-delay="800">1</h2>
+                  <h6>Years experience</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carausel Section -->
+    <section id="portfolio">
+      <!-- Swiper -->
+      <div class="col-xs-12 col-sm-6 mt-auto mb-auto mr-auto">
+        <h3 class="text-center" data-aos="flip-right">Recent projects I have designed
+          <span class="special_amp">&amp;</span> developed. Would love to add yours too…</h3>
+        <div class="hr"></div>
+        <p class="text-center" data-aos="flip-left">List of websites I have been working at:</p>
+        <ul class="text-center pl-0" data-aos="flip-right">
+          <li>
+            <a href="http://joinuplviv.com" target="_blank">http://joinuplviv.com</a>
+          </li>
+          <li>
+            <a href="http://tidalmove.com" target="_blank">http://tidalmove.com</a>
+          </li>
+          <li>
+            <a href="http://leadingminds.co" target="_blank">http://leadingminds.co</a>
+          </li>
+          <li>
+            <a href="https://niuz.co" target="_blank">https://ngmates.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 mt-auto mb-auto carausel-wrapper">
+        <div class="mt-auto mb-auto swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/carousel_1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/carousel_2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/carousel_3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/carousel_4.jpg)"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact info Section -->
+    <section id="contact">
+      <!-- Map info Section -->
+      <div class="map-wrapper">
+        <div id="map">My map will go here</div>
+      </div>
+      <section class="contact-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-11 col-md-10 mx-auto">
+              <div class="contact-area">
+                <div class="left-area" data-aos="flip-left">
+                  <div class="display-table">
+                    <div class="display-table-cell">
+                      <h4 class="heading-area">
+                        <b>Contact us</b>
+                      </h4>
+                      <ul class="contact-address">
+                        <li>
+                          <i class="ion-ios-location-outline"></i>
+                          <span>181, A.Linkolna,
+                            <br> Lviv,
+                            <br> Ukraine
+                          </span>
+                        </li>
+                        <li>
+                          <i class="ion-ios-email-outline"></i>
+                          <span>drul.oksana@gmail.com</span>
+                        </li>
+                        <li>
+                          <i class="ion-ios-telephone-outline"></i>
+                          <span>+38-063-30-57-969</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-area">
+                  <h4 class="heading-area">
+                    <b>Get in touch</b>
+                  </h4>
+                  <div class="contact-form">
+                    <form method="post">
+                      <input type="text" placeholder="Enter your name" required="" data-aos="flip-left" data-aos-delay="300">
+                      <input type="email" placeholder="Enter your email" required="" data-aos="flip-left" data-aos-delay="500">
+                      <input type="text" placeholder="Subject" required="" data-aos="flip-left" data-aos-delay="800">
+                      <textarea rows="4" placeholder="Enter your messgae" required="" data-aos="flip-left" data-aos-delay="1100"></textarea>
+                      <h6>
+                        <button class="btn submit-btn" type="submit">
+                          <b>SEND MESSAGE</b>
+                        </button>
+                      </h6>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- footer -->
+    <footer></footer>
+
+    </div>
+    <!-- Swiper library for 3d carasoule -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+
+    <!-- Aos library for animation -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <!-- gooogle map -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzrMeX9OjO6uULA99TtKp5qkMcouAM6Mo&callback=initMap" async
+      defer></script>
+
+    <!-- jquery & Bootstrap -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>

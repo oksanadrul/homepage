@@ -1,0 +1,656 @@
+body {
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #383838;
+    font-weight: 300;
+    background: #ffffff;
+}
+
+/* ====================
+ * General
+ * ====================*/
+
+h1,
+h2,
+h3,
+h4,
+nav,
+.btn {
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#home,
+#about-me,
+#services,
+#responsive,
+#skills,
+#general-info,
+#portfolio {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.special_amp {
+    color: #4678ae;
+}
+
+.hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 2px;
+    background: #4678ae;
+}
+
+input,
+textarea {
+    max-width: 100%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border: 0;
+}
+
+/* ====================
+ * Preloader
+ * ====================*/
+
+#preloader {
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#status,
+.status-mes {
+    background-image: url(../img/loading.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+
+.status-mes {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+/* ====================
+ * Navigation
+ * ====================*/
+
+.navbar.navbar-light a,
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+nav.navbar.shrink {
+    width: 100%;
+    height: 55px;
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    box-shadow: 1px 10px 50px rgba(0, 0, 0, .15);
+    position: fixed;
+    left: 0px;
+    transition: all 1.5s ease;
+}
+
+nav.navbar.shrink .navbar-brand img {
+    height: 50px;
+    width: 120px;
+    transition: all 1.5s ease;
+}
+
+nav.navbar.shrink a {
+    font-size: 14px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    transition: all 1.5s ease;
+}
+
+nav.navbar.shrink .navbar-toggler {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+    transition: all 1.5s ease;
+}
+
+#back-to-top,
+#back-to-top:focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    line-height: 41px;
+    border-radius: 50px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 1.1em;
+    opacity: 0;
+    box-shadow: 2px 10px 30px rgba(0, 0, 0, .2);
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    border: 2px solid #0575E6;
+    color: #ffffff;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* ====================
+ * Home Section
+ * ====================*/
+
+.overlay {
+    opacity: 0.6;
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#home {
+    background-repeat: no-repeat;
+    background-image: url("../img/home_bg.jpg");
+    background-attachment: fixed;
+    background-position: top left;
+    height: 100vh;
+    background-size: 100% 100%;
+    color: #ffffff;
+    position: relative;
+}
+
+.main-info {
+    height: 100%;
+}
+
+.main-info div:first-child {
+    z-index: 1;
+    height: 100%;
+}
+
+/* ====================
+ * About Me Section
+ * ====================*/
+
+#about-me {
+    position: relative;
+    overflow-x: unset;
+}
+
+#about-me div:first-child {
+    position: absolute;
+    bottom: 15%;
+}
+
+#about-me h3 {
+    margin-top: 25px;
+    margin-bottom: 55px;
+}
+
+#about-me .container-fluid img {
+    border-radius: 50%;
+}
+
+#about-me .about-img {
+    z-index: 2;
+    position: absolute;
+    top: -40%;
+}
+
+#about-me span {
+    display: block;
+}
+
+/* ====================
+ * Services Section
+ * ====================*/
+
+#services {
+    background: #f8f8f8;
+    background-image: url(../img/slides1.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#services .hr,
+#responsive .hr,
+#portfolio .hr {
+    margin: 30px auto;
+}
+
+#services .services-box .col-6 {
+    display: flex;
+}
+
+#services .services-box {
+    margin: auto;
+    margin-top: 60px;
+}
+
+#services i {
+    height: 50px;
+    width: 50px;
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5%;
+    margin-right: 25px;
+    color: white;
+}
+
+/* ====================
+ * Responsive Section
+ * ====================*/
+
+#responsive {
+    background-image: url(../img/slides2.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#responsive::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    z-index: -1;
+}
+
+#responsive,
+#general-info {
+    color: #ffffff;
+}
+
+#responsive .hr,
+#portfolio .hr {
+    background: #ffffff;
+}
+
+/* ====================
+ * Skills Section
+ * ====================*/
+
+#skills {
+    background: #ffffff;
+    background-image: url(../img/slides3.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#skills .progress {
+    height: 2rem;
+    margin-bottom: 20px;
+}
+
+#skills .progress-bar {
+    background-color: #4679ae;
+    font-size: 14px;
+    width: 80%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* ====================
+ * General info Section
+ * ====================*/
+
+#general-info {
+    background: #f8f8f8;
+    background-image: url(../img/slides4.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #383838;
+}
+
+#general-info .row {
+    margin-top: 70px;
+}
+
+#general-info i {
+    margin-right: 15px;
+}
+
+#general-info .counter-value {
+    font-size: 2rem;
+    color: #4679ae;
+}
+
+/* ====================
+ * Portfolio Section
+ * ====================*/
+
+#portfolio {
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    color: #ffffff;
+    display: flex;
+}
+
+#portfolio .special_amp {
+    display: block;
+    color: #ffffff;
+}
+
+#portfolio ul {
+    list-style: none;
+}
+
+#portfolio ul li a {
+    color: #ffffff;
+    font-size: 1.5rem
+}
+
+.swiper-container {
+    width: 300px;
+    height: 500px;
+    margin-top: 25%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: -150px;
+}
+
+/* ====================
+ * ContactInfo Section
+ * ====================*/
+
+#contact {
+    position: relative;
+    padding-top: 250px;
+    margin: 100px 0 -250px;
+}
+
+#contact .map-wrapper {
+    position: absolute;
+    top: -100px;
+    bottom: 250px;
+    left: 0;
+    right: 0;
+}
+
+#map {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-form .contact-area {
+    position: relative;
+    z-index: 10;
+    margin-left: 50px;
+    box-shadow: 1px 10px 50px rgba(0, 0, 0, .15);
+}
+
+.contact-form .contact-area .left-area {
+    padding: 30px 30px 20px;
+    width: 350px;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: -50px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 50px rgba(0, 0, 0, .15);
+    color: #fff;
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contact-form .heading-area {
+    margin-bottom: 30px;
+}
+
+.contact-form.contact-area .left-area li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.contact-form .contact-area .right-area {
+    border-radius: 5px;
+    padding: 50px;
+    padding-left: 350px;
+    background: #eaf1f3;
+}
+
+.contact-form .contact-area .right-area input {
+    padding: 0 15px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+.contact-form .contact-area .right-area button {
+    padding: 12px 30px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 14px 25px;
+    border-radius: 100px;
+    border: 0;
+    z-index: 1;
+    box-shadow: 2px 10px 40px rgba(0, 0, 0, .15);
+    color: #fff;
+    background: -webkit-linear-gradient(24deg, #fa951f, #ff6a03);
+    background: linear-gradient(24deg, #fa951f, #ff6a03);
+}
+
+.contact-form .contact-area .right-area textarea {
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+/* ====================
+ * Footer
+ * ====================*/
+
+footer {
+    background: #3acfd5;
+    background: -webkit-linear-gradient(32deg, #3acfd5, #3a4ed5);
+    background: linear-gradient(32deg, #3acfd5, #3a4ed5);
+    padding-top: 320px;
+}
+
+/* ====================
+ * Media queries
+ * ====================*/
+
+@media only screen and (max-width: 375px) {
+
+    nav .navbar-brand {
+        width: 95px;
+    }
+    nav.navbar .navbar-brand img {
+        width: 95px;
+    }
+
+    #about-me {
+        height: auto;
+    }
+
+    #about-me div:first-child {
+        position: unset;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #about-me img:first-child {
+        display: none;
+    }
+    #portfolio {
+        padding: 5%;
+        display: block;
+        height: auto;
+    }
+    .swiper-container {
+        width: 250px;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        display: none;
+    }
+    .contact-form .contact-area {
+        margin-left: 0;
+    }
+    .contact-form .contact-area .left-area {
+        width: auto;
+        position: unset;
+    }
+    .contact-form .contact-area .right-area {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+    #portfolio {
+        display: flex;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 769px) {
+    .contact-form .contact-area .right-area {
+        padding-right: 20px;
+        padding-left: 320px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar {
+        background: #3acfd5;
+    }
+    nav.navbar.shrink {
+        height: 80px;
+        background: #3acfd5;
+    }
+    .navbar-collapse.collapse.show {
+        background: #3acfd5;
+        width: 100%;
+        position: relative;
+        padding: 1rem;
+        margin: 0rem -17px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #services,
+    #responsive,
+    #skills,
+    #general-info {
+        background-image: none;
+    }
+    #services,
+    #responsive,
+    #skills,
+    #general-info {
+        padding: 5% 0;
+    }
+
+    #services {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    #services .left-side,
+    #responsive .left-side,
+    #skills .left-side,
+    #general-info .left-side {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #services .left-side {
+        background-image: url(../img/services.png);
+    }
+    #responsive .left-side {
+        background-image: url(../img/responsive.png);
+    }
+    #skills .left-side {
+        background-image: url(../img/skills.png);
+        background-position: unset;
+    }
+    #general-info .left-side {
+        background-image: url(../img/general-info.png);
+    }
+}
